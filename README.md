@@ -123,3 +123,89 @@
   ### * Corrida
   
   ### * Imagenes del circuito
+  
+## Laser emit
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+ 
+## Laser emit
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+  
+## Ball switch
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Analog temp
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+
+## Small sound
+  
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+
+## Digital temperature
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+
+## Mini two-color
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Butom 
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+ 
+## Photo-esistor
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+
+## IR emission
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+
+
+
+    
