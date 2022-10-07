@@ -205,6 +205,69 @@
   
   ### * Imagenes del circuito
   
+## Tracking
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Buzzer
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Reed switch
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Shock
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Shock
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Ky-015 Temp 
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Ky-022 IR ???eiver 
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Avoidance 
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
 
 
 
