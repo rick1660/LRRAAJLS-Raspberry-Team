@@ -15,7 +15,7 @@
   
  
  
-## Joystick
+## Flame
   ### * Codigo
   
   ### * Corrida
@@ -74,7 +74,7 @@
   
   ### * Imagenes del circuito
   
-## SMD RGB
+## Color Flash
 
   ### * Codigo
   
@@ -82,7 +82,16 @@
   
   ### * Imagenes del circuito
   
-## Color flash
+## Tilt switch
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+
+## 18B20 Temp
 
   ### * Codigo
   
@@ -90,3 +99,27 @@
   
   ### * Imagenes del circuito
 
+## Big Sound
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+
+
+## Touch
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Two-color
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
