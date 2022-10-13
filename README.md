@@ -269,6 +269,51 @@
   
   ### * Imagenes del circuito
 
+## Passive Buzzer
 
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+ ## Mini Switch
 
-    
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Rotay encoders
+ 
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+## Analog Hall
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+ 
+## Tap Module
+  
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+ 
+## Light blocking
+
+  ### * Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
