@@ -253,7 +253,7 @@
   
   ### * Imagenes del circuito
   
-## Ky-022 IR ???eiver 
+## Ky-022 IR receiver 
 
   ### * Codigo
   
