@@ -248,24 +248,40 @@ while True: # loop infinitely
   
   ### * Imagenes del circuito
   
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626319.png" width="251" height="73" alt="Ball switch" /></a>
 
+  ### * Codigo
+  ~~~
+  from machine import Pin
+import utime
+
+pin=27
+sensor=Pin(pin, Pin.IN)
+utime.sleep(1)
+
+while True:
+    if sensor.value()==1:
+        print("Sensor detectado")
+        utime.sleep(2)    
+    else:
+        print("No detectado")
+        utime.sleep(2)
+utime.sleep(1)
+~~~
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+  
+##<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626320.png" width="289" height="86" alt=" Analog temp" /></a>
 
   ### * Codigo
   
   ### * Corrida
   
   ### * Imagenes del circuito
-  
-  
-## Analog temp
 
-  ### * Codigo
-  
-  ### * Corrida
-  
-  ### * Imagenes del circuito
-
-## Small sound
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626321.png" width="284" height="73" alt="Small sound" /></a>
   
   ### * Codigo
   
@@ -281,18 +297,46 @@ while True: # loop infinitely
   
   ### * Imagenes del circuito
 
-## Mini two-color
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626322.png" width="320" height="73" alt="Mini two-color" /></a>
 
   ### * Codigo
-  
+~~~
+from machine import Pin
+import time
+
+led_pins = [16,17] # pins where RGB LED is wired
+leds = [Pin(led_pins[0],Pin.OUT),Pin(led_pins[1],Pin.OUT)] # pin control array
+delay_t = 0.1 # seconds to delay between toggles
+while True: # loop infinitely
+    for led in leds: # loop through each led
+        led.high() # led high
+        time.sleep(delay_t) # wait
+        led.low() # led low
+       time.sleep(delay_t) # wait
+~~~
+
   ### * Corrida
   
   ### * Imagenes del circuito
   
-## Butom 
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626323.png" width="146" height="46" alt="Butom " /></a>
 
   ### * Codigo
+  ~~~
+from machine import Pin
+from time import sleep
+
+led = Pin(14, Pin.OUT)    # 14 number in is Output
+push_button = Pin(13, Pin.IN)  # 13 number pin is input
+
+while True:
   
+  logic_state = push_button.value()
+  if logic_state == True:     # if push_button pressed
+      led.value(1)             # led will turn ON
+  else:                       # if push_button not pressed
+      led.value(0)             # led will turn OFF
+  ~~~~  
   ### * Corrida
   
   ### * Imagenes del circuito
