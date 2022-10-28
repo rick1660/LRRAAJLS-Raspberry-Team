@@ -341,15 +341,24 @@ while True:
   
   ### * Imagenes del circuito
  
-## Photo-esistor
-
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626324.png" width="284" height="73" alt="Photo-esistor" /></a>
   ### * Codigo
-  
+~~~~
+  from machine import Pin
+import time
+ 
+ldr = machine.ADC(27)
+ 
+while True:
+     print(ldr.read_u16())
+     time.sleep(0.5)
+ ~~~~
+ 
   ### * Corrida
   
   ### * Imagenes del circuito
 
-## IR emission
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626325.png" width="278" height="73" alt="IR emission" /></a>
 
   ### * Codigo
   
