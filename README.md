@@ -1,13 +1,13 @@
-# LRRAAJLS-Raspberry-Team
-
-# Sistemas programables
-
-## 37 Sensor KIT
+# <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626291.png" width="946" height="144" alt="LRRAAJLS-Raspberry-Team" /></a>
 
 
+ <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626292.png" width="417" height="83" alt="Sistemas programables" /></a>
 
-## Joystick
-  ### Codigo
+ <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626293.png" width="214" height="79" alt="37 Sensor KIT" /></a>
+
+
+
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626294.png" width="219" height="93" alt="Joystick" /></a>
   ~~~~
     from machine import Pin, ADC
 import utime
