@@ -361,12 +361,27 @@ while True:
 ## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626325.png" width="278" height="73" alt="IR emission" /></a>
 
   ### * Codigo
+  ~~~
   
+import machine
+from ir_tx import NEC
+import utime
+
+sensorIR = machine.Pin(26, machine.Pin.OUT) #ADC0 sera mi salida de datos analogicos
+sensorIR.value(0)# asignamos valor
+nec = NEC(sensorIR)
+sw = machine.Pin(0,machine.Pin.IN)
+
+while True:
+    if sw.value() == 0:
+        nec.transmit(0x0000, 0x09) #trasfiero este valor
+    machine.sleep_ms(100)
+~~~
   ### * Corrida
   
   ### * Imagenes del circuito
   
-## Tracking
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626326.png" width="210" height="86" alt="Tracking" /></a>
 
   ### * Codigo
   
@@ -374,7 +389,7 @@ while True:
   
   ### * Imagenes del circuito
   
-## Buzzer
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626327.png" width="178" height="81" alt="Buzzer" /></a>
 
   ### * Codigo
   ~~~~
@@ -503,7 +518,7 @@ BuzzerObj.deinit()
   ### * Imagenes del circuito
   ![1666996945350](https://user-images.githubusercontent.com/99373882/198746959-51e16cb4-1565-448f-a856-c2176ba11dd9.jpg)
   
-## Reed switch
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626328.png" width="259" height="73" alt="Reed switch" /></a>
 
   ### * Codigo
   
@@ -511,7 +526,7 @@ BuzzerObj.deinit()
   
   ### * Imagenes del circuito
   
-## Shock
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626330.png" width="231" height="108" alt="White" /></a>
 
   ### * Codigo
   
@@ -519,7 +534,7 @@ BuzzerObj.deinit()
   
   ### * Imagenes del circuito
   
-## Shock
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626331.png" width="286" height="85" alt="Ky-015 Temp " /></a>
 
   ### * Codigo
   
@@ -527,7 +542,7 @@ BuzzerObj.deinit()
   
   ### * Imagenes del circuito
   
-## Ky-015 Temp 
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626332.png" width="406" height="85" alt="Ky-022 IR receiver " /></a>
 
   ### * Codigo
   
@@ -535,15 +550,7 @@ BuzzerObj.deinit()
   
   ### * Imagenes del circuito
   
-## Ky-022 IR receiver 
-
-  ### * Codigo
-  
-  ### * Corrida
-  
-  ### * Imagenes del circuito
-  
-## Avoidance 
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626333.png" width="239" height="73" alt="Avoidance " /></a>
 
   ### * Codigo
   
@@ -551,7 +558,7 @@ BuzzerObj.deinit()
   
   ### * Imagenes del circuito
 
-## Passive Buzzer
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626334.png" width="327" height="81" alt="Passive Buzzer" /></a>
 
   ### * Codigo
   
@@ -559,7 +566,7 @@ BuzzerObj.deinit()
   
   ### * Imagenes del circuito
   
- ## Mini Switch
+ ## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626335.png" width="271" height="73" alt="Mini Switch" /></a>
 
   ### * Codigo
   
@@ -567,7 +574,7 @@ BuzzerObj.deinit()
   
   ### * Imagenes del circuito
   
-## Rotay encoders
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626337.png" width="326" height="85" alt="Rotay encoders" /></a>
  
   ### * Codigo
   ~~~~
@@ -595,7 +602,7 @@ while 1==1:
   ![Screenshot_3](https://user-images.githubusercontent.com/99373882/196571975-12001837-7a48-4c41-82c6-1bd397529fd1.png)
   ### * Imagenes del circuito
   ![1666996945345](https://user-images.githubusercontent.com/99373882/198746987-61b90273-c06c-47cf-b874-0903dafa58f2.jpg)
-## Analog Hall
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626338.png" width="281" height="86" alt="Analog Hall" /></a>
 
   ### * Codigo
   
@@ -603,7 +610,7 @@ while 1==1:
   
   ### * Imagenes del circuito
  
-## Tap Module
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626339.png" width="228" height="55" alt="Tap Module" /></a>
   
   ### * Codigo
   
@@ -611,7 +618,7 @@ while 1==1:
   
   ### * Imagenes del circuito
  
-## Light blocking
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626340.png" width="311" height="86" alt="Light blocking" /></a>
 
   ### * Codigo
   
