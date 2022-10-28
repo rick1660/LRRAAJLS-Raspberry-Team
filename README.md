@@ -289,8 +289,7 @@ utime.sleep(1)
   
   ### * Imagenes del circuito
 
-## Digital temperature
-
+## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626342.png" width="411" height="86" alt="Digital temperature" /></a>
   ### * Codigo
   
   ### * Corrida
