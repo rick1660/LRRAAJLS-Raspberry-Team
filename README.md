@@ -8,12 +8,35 @@
 
 ## Joystick
   ### Codigo
-  
+  ~~~~
+    from machine import Pin, ADC
+import utime
+
+xAxis = ADC(Pin(27))
+yAxis = ADC(Pin(26))
+button = Pin(17,Pin.IN, Pin.PULL_UP)
+
+while True:
+    xValue = xAxis.read_u16()
+    yValue = yAxis.read_u16()
+    buttonValue = button.value()
+    buttonStatus = "not pressed"
+
+
+    if buttonValue == 0:
+        buttonStatus = "pressed"
+        
+        
+    print("X: " + str(xValue) + ", Y: " + str(yValue) + " -- button value: " + str(buttonValue) + " button status: " + buttonStatus)
+    utime.sleep(0.2)
+  ~~~~
   ### Corrida
+  
+  ![image](https://user-images.githubusercontent.com/99373882/198747619-072d5437-fa70-4d74-a185-0aa833ccd817.png)
   
   ### Imagenes del circuito
   
- 
+ ![1666996905704](https://user-images.githubusercontent.com/99373882/198746941-beaf665b-f222-42d5-85af-254e8f9e2e9c.jpg)
  
 ## Flame
   ### * Codigo
@@ -246,10 +269,131 @@ if __name__ == "__main__":
 ## Buzzer
 
   ### * Codigo
+  ~~~~
+    from machine import Pin, PWM
+from time import sleep
+
+buzzerPIN=16
+BuzzerObj = PWM(Pin(buzzerPIN))
+
+def buzzer(buzzerPinObject,frequency,sound_duration,silence_duration):
+
+    # Set duty cycle to a positive value to emit sound from buzzer
+    buzzerPinObject.duty_u16(int(65536*0.1))
+    # Set frequency
+    buzzerPinObject.freq(frequency)
+    # wait for sound duration
+    sleep(sound_duration)
+    # Set duty cycle to zero to stop sound
+    buzzerPinObject.duty_u16(int(65536*0))
+    # Wait for sound interrumption, if needed 
+    sleep(silence_duration)
+
+
+#set translation table from note to frequency
+do5=523
+dod5=554
+re5=587
+red5=622
+mi5=659
+fa5=698
+fad5=739
+sol5=784
+sold5=830
+la5=880
+lad5=932
+si5=987
+
+
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,red5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,red5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,si5,0.1,0.1)
+buzzer(BuzzerObj,re5,0.1,0.1)
+buzzer(BuzzerObj,do5,0.1,0.1)
+buzzer(BuzzerObj,la5,0.5,0.1)
+
+buzzer(BuzzerObj,do5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,la5,0.1,0.1)
+buzzer(BuzzerObj,si5,0.5,0.1)
+
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,sold5,0.1,0.1)
+buzzer(BuzzerObj,si5,0.1,0.1)
+buzzer(BuzzerObj,do5,0.5,0.1)
+
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,red5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,red5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,si5,0.1,0.1)
+buzzer(BuzzerObj,re5,0.1,0.1)
+buzzer(BuzzerObj,do5,0.1,0.1)
+buzzer(BuzzerObj,la5,0.5,0.1)
+
+buzzer(BuzzerObj,do5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,la5,0.1,0.1)
+buzzer(BuzzerObj,si5,0.5,0.1)
+
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,do5,0.1,0.1)
+buzzer(BuzzerObj,si5,0.1,0.1)
+buzzer(BuzzerObj,la5,0.5,0.1)
+
+buzzer(BuzzerObj,si5,0.1,0.1)
+buzzer(BuzzerObj,do5,0.1,0.1)
+buzzer(BuzzerObj,re5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.5,0.1)
+
+buzzer(BuzzerObj,sol5,0.1,0.1)
+buzzer(BuzzerObj,fa5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,re5,0.5,0.1)
+
+buzzer(BuzzerObj,fa5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,re5,0.1,0.1)
+buzzer(BuzzerObj,do5,0.5,0.1)
+
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,re5,0.1,0.1)
+buzzer(BuzzerObj,do5,0.1,0.1)
+buzzer(BuzzerObj,si5,0.5,0.1)
+
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,red5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,red5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,si5,0.1,0.1)
+buzzer(BuzzerObj,re5,0.1,0.1)
+buzzer(BuzzerObj,do5,0.1,0.1)
+buzzer(BuzzerObj,la5,0.5,0.1)
+
+buzzer(BuzzerObj,do5,0.1,0.1)
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,la5,0.1,0.1)
+buzzer(BuzzerObj,si5,0.5,0.1)
+
+buzzer(BuzzerObj,mi5,0.1,0.1)
+buzzer(BuzzerObj,do5,0.1,0.1)
+buzzer(BuzzerObj,si5,0.1,0.1)
+buzzer(BuzzerObj,la5,0.5,0.1)
+
+#Deactivates the buzzer
+BuzzerObj.deinit()
+  ~~~~
   
   ### * Corrida
+  ![image](https://user-images.githubusercontent.com/99373882/198747542-c0625f35-d8f5-48d0-bfd4-aeab13b235b9.png)
   
   ### * Imagenes del circuito
+  ![1666996945350](https://user-images.githubusercontent.com/99373882/198746959-51e16cb4-1565-448f-a856-c2176ba11dd9.jpg)
   
 ## Reed switch
 
@@ -318,11 +462,31 @@ if __name__ == "__main__":
 ## Rotay encoders
  
   ### * Codigo
-  
+  ~~~~
+  import board
+import digitalio
+
+dirPin = digitalio.DigitalInOut(board.GP16)
+stePin = digitalio.DigitalInOut(board.GP17)
+dirPin.direction  = digitalio.Direction.INPUT
+stepPin.direction = digitalio.Direction.INPUT
+
+dirPin.pull = digitalio.Pull.UP
+stepPin.pull = digitalio.Pull.UP
+previousValue = True
+while 1==1:
+    if previousValue != stepPin.value:
+        if stepPin.value == False:
+            if dirPin.value == False:
+                print("A la izquierda, a al izquierda!")
+            else:
+                print("A la derecha,a la derecha")
+        previousValue = stepPin.value
+  ~~~~
   ### * Corrida
-  
+  ![Screenshot_3](https://user-images.githubusercontent.com/99373882/196571975-12001837-7a48-4c41-82c6-1bd397529fd1.png)
   ### * Imagenes del circuito
-  
+  ![1666996945345](https://user-images.githubusercontent.com/99373882/198746987-61b90273-c06c-47cf-b874-0903dafa58f2.jpg)
 ## Analog Hall
 
   ### * Codigo
