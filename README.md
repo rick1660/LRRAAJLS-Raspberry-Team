@@ -38,15 +38,30 @@ while True:
   
  ![1666996905704](https://user-images.githubusercontent.com/99373882/198746941-beaf665b-f222-42d5-85af-254e8f9e2e9c.jpg)
  
-## Flame
-  ### * Codigo
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626295.png" width="179" height="79" alt="Flame" /></a>
+Codigo
+  ```from machine import Pin
+import utime
+
+flame_sensor = Pin(16, Pin.IN)
+utime.sleep(2)
+
+while True:
+   if flame_sensor.value() == 1:
+       print("Flame Detected")
+       utime.sleep(3)
+   else:
+       print("No Flame")
+       utime.sleep(1)
+utime.sleep(0.1) 
+```
+
+  ###  Corrida
   
-  ### * Corrida
-  
-  ### * Imagenes del circuito
+  ###  Imagenes del circuito
   
   
-## RGB LED
+ <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626297.png" width="230" height="48" alt="RGB LED" /></a>
   ### * Codigo
    ~~~~
     #Importamos librerias
