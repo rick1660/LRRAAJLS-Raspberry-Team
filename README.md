@@ -97,6 +97,8 @@ if __name__ == "__main__":
   ### * Corrida
   
   ### * Imagenes del circuito
+   ![image](ledrgb.jpeg)
+  
   
    
   
