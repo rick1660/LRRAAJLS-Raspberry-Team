@@ -134,6 +134,8 @@ while True:
 utime.sleep(1)
 ``` 
   ### * Corrida
+  ![image](https://user-images.githubusercontent.com/44456885/199365586-d5c64ec6-eb9a-4571-a054-f2c9d1978f65.png)
+
   
   ### * Imagenes del circuito
   
@@ -339,9 +341,12 @@ while True:
       led.value(0)             # led will turn OFF
   ~~~~  
   ### * Corrida
-  
+  ![image](https://user-images.githubusercontent.com/44456885/199365236-dffc6791-09a0-43f1-91cb-088201bc023e.png)
+
   ### * Imagenes del circuito
- 
+  
+ ![image](https://user-images.githubusercontent.com/44456885/199365194-5bdb0313-282a-4453-b861-f3a7319f6cb6.png)
+
 ## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626324.png" width="284" height="73" alt="Photo-esistor" /></a>
   ### * Codigo
 ~~~~
