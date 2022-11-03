@@ -611,7 +611,7 @@ while 1==1:
 ## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626338.png" width="281" height="86" alt="Analog Hall" /></a>
 
   ### * Codigo
-  
+  .
   ### * Corrida
   
   ### * Imagenes del circuito
