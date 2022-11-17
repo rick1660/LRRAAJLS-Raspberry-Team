@@ -209,6 +209,39 @@ Codigo
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626312.png" width="295" height="90" alt="18B20 Temp" /></a>
 
 Codigo
+~~~~
+import machine, onewire, ds18x20, time
+
+ds_pin = machine.Pin(22)
+ds_sensor = ds18x20.DS18X20(onewire.OneWire(ds_pin))
+
+roms = ds_sensor.scan()
+print('Found DS devices: ', roms)
+
+while True:
+  ds_sensor.convert_temp()
+  time.sleep_ms(750)
+  for rom in roms:
+    print(rom)
+    print(ds_sensor.read_temp(rom))
+  time.sleep(5)
+~~~~
+
+import machine, onewire, ds18x20, time
+
+ds_pin = machine.Pin(22)
+ds_sensor = ds18x20.DS18X20(onewire.OneWire(ds_pin))
+
+roms = ds_sensor.scan()
+print('Found DS devices: ', roms)
+
+while True:
+  ds_sensor.convert_temp()
+  time.sleep_ms(750)
+  for rom in roms:
+    print(rom)
+    print(ds_sensor.read_temp(rom))
+  time.sleep(5)
   
   ### * Corrida
   
